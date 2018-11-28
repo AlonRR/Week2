@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.mass{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 15fr 1fr;
+    grid-template-areas: 
+    "sb ma"
+    "sb ia";
+    font-style: helvetica;
+}
+.sideBar{
+    grid-area: sb;
+    /* row-gap: 14%; */
+    display: grid;
+    background-color: blueviolet;
+    /* align-content:  */
+    /* padding: 0;  */
+    align-content: space-around;
+}
+.friend{
+    display: inline;
+    margin: 0;
+    background-color: #a44cf7;
+    font-size: 175%;
+}
+.messegeArea{
+    grid-area: ma;
+    display: grid; 
+    background-color: lightgrey; 
+}
+.inputArea{
+    grid-area: ia;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
