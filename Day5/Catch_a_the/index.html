@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Catch the Chopper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <script id='frog-template' type="text/x-handlebars-template">
+            <div style="font-size:{{size}}px" 
+            style="background-color:rgb{{color}}" 
+            onclick="removeFrog()">
+            <i class="fas fa-helicopter"></i>
+        </div>
+    </script>
+    <div class="screen">
+        <div class="topBar"></div>
+        <div class="mainBody"></div>
+        <div class="bot">
+            <div class="left"></div>
+            <div class="instruc"></div>
+            <div class="level"></div>
+        </div>
+        <!-- <div class="heli"> <i class="fas fa-helicopter"></i></div> -->
+    </div>
+    <script src="handlebars.js"></script>
+    <script src="jquery-3.3.1.js"></script>
+    <script src="logic.js"></script>
+    <script src="render.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
